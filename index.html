@@ -24,16 +24,29 @@
     <link rel="stylesheet" href="assets/css/pokedex.css" />
   </head>
   <body>
-    <section class="content">
-      <div class="title">
-        <img
-          src="https://www.svgrepo.com/show/276264/pokeball-pokemon.svg"
-          alt="pokeball"
-        />
-        <h1>Pokedex</h1>
+    <header class="top-header">
+      <div class="header-content">
+        <div class="image">
+          <img
+            src="https://raw.githubusercontent.com/gist/Galadirith/baaf38c7286b568973cc50a50ff57f4d/raw/34d60cae491bc505c212398b94f12705665c12fc/pokeball.svg"
+            alt="pokeball"
+          />
+        </div>
+        <nav class="header-infos">
+          <ul class="header-menu">
+            <li class="button-father">
+              <a class="button-main" href="#">Home</a>
+            </li>
+            <li class="button-father">
+              <a class="button-main" href="#">About me</a>
+            </li>
+          </ul>
+        </nav>
       </div>
+    </header>
+    <section class="content">
       <ol id="pokemonList" class="pokemons">
-        <li style="background-color: red" class="pokemon">
+        <!-- <li style="background-color: red" class="pokemon">
           <span class="number">#001</span>
           <span class="name">Bulbassaur</span>
           <div class="detail">
@@ -46,7 +59,7 @@
               alt="bullbasaur"
             />
           </div>
-        </li>
+        </li> -->
         <!-- Pokemons Here -->
       </ol>
       <div class="pagination">
