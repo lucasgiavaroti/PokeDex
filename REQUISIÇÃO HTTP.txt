@@ -1,0 +1,43 @@
+Entendendo API’s e Protocolo HTTP
+
+Uma API é um servidor, web service, que nos serve dados para usos diversos.
+
+Requisição HTTP:
+
+URL_PATH & METHOD:
+url: https://pokeapi.co/api/v2/pokemon
+url: ${ip}--------------->/${path = caminho de identificação do recurso}
+
+ip: https://pokeapi.co
+path: /api/v2/pokemon
+
+REQUEST_METHOD:		
+request method: GET | POST | PUT | DELETE |PATCH entre outros
+
+PATH_PARAMS & QUERY_STRING:
+pathParams:
+A forma mais simples de solicitar um dado para uma API é pela URL, por exemplo:
+https://pokeapi.co/api/v2/pokemon/1
+Essa URL retorna o Bulbasaur, e representará os demais pokemons respectivamente.
+
+QueryString:
+Uma query string no protocolo HTTP é uma parte de uma URL que contém dados que são enviados para o servidor junto com a requisição. Esses dados são geralmente utilizados para realizar consultas ou passar parâmetros para o servidor, como por exemplo em formulários web. A query string começa após o caractere '?' na URL e é composta por pares de chave-valor separados por '&' e codificados de acordo com as regras de URL encoding.
+
+Exemplo:
+url: https://pokeapi.co/api/v2/pokemon?type=grass&name=i
+
+type: grass
+name: i
+
+https://pokeapi.co/api/v2/pokemon?offset=4&limit=2
+offset é o deslocamento
+limit é o limite a ser exibido naquela lista
+
+Body é onde os dados serão passados, é o corpo da nossa requisição. 
+Exemplo:
+
+Request Headers
+	content-type: application/json
+body{
+	“name”: “teste”
+}
