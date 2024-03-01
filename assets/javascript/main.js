@@ -4,10 +4,17 @@ const loadMoreButton = document.getElementById("loadMoreButton");
 let limit = 6;
 let offset = 0;
 
+function pokemonFormaterId(id) {
+  if (id < 100) {
+    return `#0${id}`;
+  } else {
+    return `#${id}`;
+  }
+}
 function convertePokemonToLi(pokemon) {
   return `
   <li class="pokemon ">
-  <span class="number">#0${pokemon.id}</span>
+  <span class="number">${pokemonFormaterId(pokemon.id)}</span>
   <span class="name">${pokemon.name}</span>
   <div class="detail">
   <ol class="types">
