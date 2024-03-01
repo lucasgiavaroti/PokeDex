@@ -1,7 +1,7 @@
 // pegando a OL por ID e colocando em uma variável
 const pokemonList = document.getElementById("pokemonList");
 const loadMoreButton = document.getElementById("loadMoreButton");
-let limit = 10;
+let limit = 6;
 let offset = 0;
 
 function convertePokemonToLi(pokemon) {
@@ -15,12 +15,12 @@ function convertePokemonToLi(pokemon) {
     .map((type) => `<li class="type ${type}">${type}</li>`)
     .join("")}
     </ol>
-                    <img
-                    src=${pokemon.photo}
-                      alt="${pokemon.name}"
-                    />
-                  </div>
-                  </li>
+          <img
+                src=${pokemon.photo}
+                alt="${pokemon.name}"
+          />
+    </div>
+    </li>
                   `;
 }
 
