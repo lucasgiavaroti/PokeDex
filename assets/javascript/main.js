@@ -4,6 +4,7 @@ const loadMoreButton = document.getElementById("loadMoreButton");
 let limit = 6;
 let offset = 0;
 
+// função para formatar o id do pokemon
 function pokemonFormaterId(id) {
   if (id < 100) {
     return `#0${id}`;
