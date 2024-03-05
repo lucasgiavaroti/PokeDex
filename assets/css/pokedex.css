@@ -114,10 +114,6 @@ ol .fairy {
   max-width: 100%;
   height: 85px;
 }
-.pokemon .detail-2 {
-  background-color: red;
-  display: flex;
-}
 .pagination {
   display: flex;
   flex-direction: row;

@@ -1,0 +1,82 @@
+* {
+  /*            1ªopcao  2ªopcao   */
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.informations-1 {
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.informations-1 img {
+  margin: auto;
+}
+.nameAndType {
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nameAndType .number-detail {
+  color: #000;
+  opacity: 0.3;
+  text-align: right;
+  font-size: 1rem;
+}
+.nameAndType .name-detail {
+  color: #000;
+  text-align: right;
+  font-size: 2rem;
+}
+.nameAndType ol {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+.nameAndType ol li {
+  text-align: center;
+  border-radius: 1rem;
+  color: #ffffff;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.8rem;
+}
+.informations-2 {
+  /* background-color: gray; */
+  padding: 1rem;
+}
+.informations-2 .stats-detail {
+  color: #000;
+  text-align: right;
+  font-size: 1.5rem;
+}
+.informations-2 li {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+.informations-2 li h3 {
+  color: #000;
+  opacity: 0.3;
+  font-size: 1rem;
+}
+.informations-2 .progress {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  /* background-color: red; */
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}

@@ -14,6 +14,7 @@ function pokemonFormaterId(id) {
 }
 function convertePokemonToLi(pokemon) {
   return `
+  <a href="details.html">
   <li class="pokemon ">
     <span class="number">${pokemonFormaterId(pokemon.id)}</span>
     <span class="name">${pokemon.name}</span>
@@ -24,7 +25,9 @@ function convertePokemonToLi(pokemon) {
       </ol>
       <img src=${pokemon.photo} alt="${pokemon.name}"/>
     </div>
-  </li>`;
+  </li>
+  </a>
+  `;
 }
 
 // Primeira requisição -- Processamento assíncrono e funcões de callbacks
