@@ -14,7 +14,7 @@ function pokemonFormaterId(id) {
 }
 function convertePokemonToLi(pokemon) {
   return `
-  <a href="details.html">
+  <a class="itens" href="details.html?id=${pokemon.id}">
   <li class="pokemon ">
     <span class="number">${pokemonFormaterId(pokemon.id)}</span>
     <span class="name">${pokemon.name}</span>

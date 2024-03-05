@@ -13,19 +13,30 @@ function convertePokeApiDetailToPokemonClass(pokeDetail) {
   pokemon.types = types;
   pokemon.type = type;
 
+  const stats = pokeDetail.stats.map((statSlot) => statSlot);
+  const [stat] = stats;
+
+  pokemon.stats = stats;
+  pokemon.stat = stat;
+
   pokemon.photo = pokeDetail.sprites.other.dream_world.front_default;
 
   return pokemon;
 }
 
 pokeApi.getPokemonDetail = (pokemon) => {
-  return fetch(pokemon.url)
+  return fetch(pokemon.url || url)
+    .then((response) => response.json())
+    .then(convertePokeApiDetailToPokemonClass);
+};
+
+pokeApi.getPokemonDetails = (pokemon) => {
+  return fetch(pokemon)
     .then((response) => response.json())
     .then((pokeDetail) => {
       console.log(pokeDetail);
       return pokeDetail;
     })
-
     .then(convertePokeApiDetailToPokemonClass);
 };
 

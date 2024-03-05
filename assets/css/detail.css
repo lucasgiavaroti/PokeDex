@@ -39,6 +39,7 @@
   color: #000;
   text-align: right;
   font-size: 2rem;
+  text-transform: capitalize;
 }
 .nameAndType ol {
   list-style: none;
@@ -52,6 +53,7 @@
   color: #ffffff;
   padding: 0.5rem 0.8rem;
   font-size: 0.8rem;
+  text-transform: capitalize;
 }
 .informations-2 {
   /* background-color: gray; */
@@ -61,6 +63,9 @@
   color: #000;
   text-align: right;
   font-size: 1.5rem;
+}
+.informations-2 ul {
+  padding: 0;
 }
 .informations-2 li {
   display: flex;
