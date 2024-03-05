@@ -80,3 +80,13 @@
   gap: 0.5rem;
   align-items: center;
 }
+
+@media screen and (min-width: 576px) {
+  .informations-1 {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .informations-1 img {
+    margin: 0;
+  }
+}
