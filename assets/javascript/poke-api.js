@@ -15,13 +15,20 @@ function convertePokeApiDetailToPokemonClass(pokeDetail) {
 
   pokemon.photo = pokeDetail.sprites.other.dream_world.front_default;
 
+  pokemon.height = pokeDetail.height;
+  pokemon.weight = pokeDetail.weight;
+
   return pokemon;
 }
 
 pokeApi.getPokemonDetail = (pokemon) => {
   return fetch(pokemon.url)
     .then((response) => response.json())
-    .then((pokeDetail) => pokeDetail)
+    .then((pokeDetail) => {
+      console.log(pokeDetail);
+      return pokeDetail;
+    })
+
     .then(convertePokeApiDetailToPokemonClass);
 };
 

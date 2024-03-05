@@ -14,21 +14,16 @@ function pokemonFormaterId(id) {
 function convertePokemonToLi(pokemon) {
   return `
   <li class="pokemon ">
-  <span class="number">${pokemonFormaterId(pokemon.id)}</span>
-  <span class="name">${pokemon.name}</span>
-  <div class="detail">
-  <ol class="types">
-  ${pokemon.types
-    .map((type) => `<li class="type ${type}">${type}</li>`)
-    .join("")}
-    </ol>
-          <img
-                src=${pokemon.photo}
-                alt="${pokemon.name}"
-          />
+    <span class="number">${pokemonFormaterId(pokemon.id)}</span>
+    <span class="name">${pokemon.name}</span>
+    <div class="detail">
+      <ol class="types">${pokemon.types
+        .map((type) => `<li class="type ${type}">${type}</li>`)
+        .join("")}
+      </ol>
+      <img src=${pokemon.photo} alt="${pokemon.name}"/>
     </div>
-    </li>
-                  `;
+  </li>`;
 }
 
 // Primeira requisição -- Processamento assíncrono e funcões de callbacks
